@@ -9,7 +9,7 @@ class FileHandler:
 
 
 def part1(): #this function answers part 1
-    file = FileHandler("input-day1.txt")
+    file = FileHandler("day1/input-day1.txt")
     my_file = file.read_file()
     new_file = my_file.split("\n")
 
@@ -26,7 +26,7 @@ def part1(): #this function answers part 1
 
 
 def part2(): #this function answers part 2
-    file = FileHandler("input-day1.txt")
+    file = FileHandler("day1/input-day1.txt")
     my_file = file.read_file()
     new_file = my_file.split("\n")
     windows = []
