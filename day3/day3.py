@@ -38,3 +38,11 @@ print(gamma_rate)
 print(epsilon_rate)
 
 
+def to_decimal(number):
+    decimal_number = 0
+    for i, x in enumerate(number[::-1]):
+        decimal_number += (int(x)*(2^i))
+        print(f"{i} and {x}")
+
+
+to_decimal(gamma_rate)
