@@ -12,7 +12,7 @@ data = """00100
 11001
 00010
 01010"""
-'''
+
 my_file = open("day3/input-day.txt", "r")
 
 mylist = my_file.read().split("\n")
@@ -32,6 +32,5 @@ while bit < len(mylist[0]):
     bit += 1
     check_list.clear()
 
-print(int(gamma_rate, 2) * int(epsilon_rate, 2))'''
+print(int(gamma_rate, 2) * int(epsilon_rate, 2))
 
-print ({x : x*x for x in range(1,100)})
