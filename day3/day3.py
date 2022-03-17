@@ -1,4 +1,3 @@
-from math import gamma
 
 
 data = """00100
@@ -13,14 +12,15 @@ data = """00100
 11001
 00010
 01010"""
+'''
+my_file = open("day3/input-day.txt", "r")
 
-
-mylist = data.split("\n")
+mylist = my_file.read().split("\n")
 check_list = []
 gamma_rate = ""
 epsilon_rate = ""
 bit = 0
-while bit < 5:
+while bit < len(mylist[0]):
     for i, x in enumerate(mylist):
         check_list.append(int(x[bit]))
     if sum(check_list) > (len(mylist)*0.5):
@@ -32,17 +32,6 @@ while bit < 5:
     bit += 1
     check_list.clear()
 
+print(int(gamma_rate, 2) * int(epsilon_rate, 2))'''
 
-
-print(gamma_rate)
-print(epsilon_rate)
-
-
-def to_decimal(number):
-    decimal_number = 0
-    for i, x in enumerate(number[::-1]):
-        decimal_number += (int(x)*(2^i))
-        print(f"{i} and {x}")
-
-
-to_decimal(gamma_rate)
+print ({x : x*x for x in range(1,100)})
